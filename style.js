@@ -1,22 +1,22 @@
 (function (blink) {
 	'use strict';
 
-	var faquxdemo2Style = function () {
+	var faq2021demoStyle = function () {
 			blink.theme.styles.basic.apply(this, arguments);
 		},
 		page = blink.currentPage;
 
-	faquxdemo2Style.prototype = {
+	faq2021demoStyle.prototype = {
 		//BK-15873 añadimos el estilo basic como parent para la herencia de los estilos del CKEditor
 		parent: blink.theme.styles.basic.prototype,
-		bodyClassName: 'content_type_clase_faquxdemo2',
+		bodyClassName: 'content_type_clase_faq2021demo',
 
-		toolbar: { name: 'editorial', items: ['Blink_faquxdemo2_link'] },
+		toolbar: { name: 'editorial', items: ['Blink_faq2021demo_link'] },
 
-		extraPlugins: ['image2', 'blink_faquxdemo2_link'],
+		extraPlugins: ['image2', 'blink_faq2021demo_link'],
 
 		ckEditorStyles: {
-			name: 'faquxdemo2',
+			name: 'faq2021demo',
 			styles: [
 				{ name: 'Encabezado', element: 'h4', attributes: { 'class': 'bck-encabezado' } },
 				{ name: 'Sub-Encabezado', element: 'p', attributes: { 'class': 'bck-sub-encabezado' } },
@@ -55,9 +55,9 @@
 		//BK-15873 Quitamos la funcion getEditorStyles para que la herede de basic
 	};
 
-	faquxdemo2Style.prototype = _.extend({}, new blink.theme.styles.basic(), faquxdemo2Style.prototype);
+	faq2021demoStyle.prototype = _.extend({}, new blink.theme.styles.basic(), faq2021demoStyle.prototype);
 
-	blink.theme.styles.faquxdemo2 = faquxdemo2Style;
+	blink.theme.styles.faq2021demo = faq2021demoStyle;
 
 })( blink );
 
