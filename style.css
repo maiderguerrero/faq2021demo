@@ -292,7 +292,7 @@ a:focus {
 /*----------------------ICONOS------------------------------------------*/
 
 .cke_contents .icon:before, 
-.item-container.icon:before {
+.item-container .icon:before {
 	content: "";
 	background-repeat: no-repeat;
 	-webkit-background-size: auto 100%;
@@ -304,7 +304,6 @@ a:focus {
 	vertical-align: top;
 	height: 40px;
 	width: 45px;
-
 }
 
 
